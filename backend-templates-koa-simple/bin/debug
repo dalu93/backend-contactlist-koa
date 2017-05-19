@@ -1,0 +1,4 @@
+#!/bin/sh
+
+make compile \
+  && node "$@" --inspect --debug-brk dist/src/app.js | node_modules/.bin/bunyan

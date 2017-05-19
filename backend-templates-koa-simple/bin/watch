@@ -1,0 +1,5 @@
+#!/bin/sh
+
+node_modules/.bin/nodemon \
+  --watch ./src \
+  --exec "make compile && node ./dist/src/app.js | ./node_modules/.bin/bunyan"

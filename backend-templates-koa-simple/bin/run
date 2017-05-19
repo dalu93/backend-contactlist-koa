@@ -1,0 +1,4 @@
+#!/bin/sh
+
+make compile \
+  && node "$@" dist/src/cluster.js | node_modules/.bin/bunyan

@@ -1,0 +1,65 @@
+{
+  "name": "koa-simple",
+  "version": "1.0.0",
+  "description": "Koa 2 simple template that can be used when starting a new project",
+  "main": "dist/src/cluster.js",
+  "scripts": {
+    "start": "node .",
+    "compile": "./bin/compile",
+    "test": "./bin/test"
+  },
+  "keywords": [
+    "koa2"
+  ],
+  "author": "Josef Zavisek",
+  "license": "ISC",
+  "engines": {
+    "node": "~7.4.0",
+    "npm": "^4.0.0"
+  },
+  "dependencies": {
+    "awslogs-stream": "^1.1.0",
+    "bcrypt": "^1.0.2",
+    "bluebird": "^3.4.7",
+    "bunyan": "^1.8.1",
+    "firebase-admin": "^4.1.1",
+    "joi": "^10.2.2",
+    "jsonwebtoken": "^7.3.0",
+    "kcors": "^2.2.1",
+    "koa": "^2.0.0-alpha.7",
+    "koa-body": "^2.0.0",
+    "koa-compose": "^3.1.0",
+    "koa-compress": "^2.0.0",
+    "koa-router": "^7.1.0",
+    "koa-static2": "^0.1.8",
+    "lodash": "^4.17.4",
+    "pg": "^6.1.2",
+    "sequelize": "^3.30.2",
+    "swagger-ui": "^2.2.10",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "@strv/eslint-config-javascript": "^6.3.0",
+    "babel-cli": "^6.23.0",
+    "babel-eslint": "^7.1.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chance": "^1.0.4",
+    "dotenv": "^4.0.0",
+    "eslint": "^3.15.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-http-detect": "^0.2.0",
+    "nodemon": "^1.11.0",
+    "nyc": "^10.1.2",
+    "sequelize-cli": "^2.5.1",
+    "snyk": "^1.25.0",
+    "supertest-koa-agent": "^0.3.0"
+  }
+}

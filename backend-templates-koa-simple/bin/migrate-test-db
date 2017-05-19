@@ -1,0 +1,4 @@
+#!/bin/sh
+
+make compile \
+  && node_modules/.bin/sequelize --env test db:migrate

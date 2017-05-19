@@ -1,0 +1,24 @@
+---
+version: '2'
+services:
+
+  # Configure a database service in a container
+  database:
+    image: sameersbn/postgresql
+    container_name: koa-2-simple-database
+    environment:
+      DB_NAME: koa-database,koa-database-test
+      PG_TRUST_LOCALNET: 'true'
+    ports:
+    - 5432:5432
+    volumes_from:
+    - database-storage
+
+  # Container for storing Postgres data
+  # (it uses cached sameersbn/postgresql layer)
+  database-storage:
+    image: sameersbn/postgresql
+    container_name: koa-2-simple-database-storage
+    command: /bin/true
+    volumes:
+    - /var/lib/postgresql
